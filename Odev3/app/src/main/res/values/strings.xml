@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Odev3</string>
+    <string name="baslikYazi1">Gawe</string>
+    <string name="baslikYazi2">an!</string>
+    <string name="yazi1">Find Your</string>
+    <string name="yazi2">Dream</string>
+    <string name="yazi3">Job</string>
+    <string name="yazi4">, and</string>
+    <string name="yazi5">Have Fun</string>
+    <string name="buttonYazi1">Login</string>
+    <string name="buttonYazi2">Register</string>
+</resources>

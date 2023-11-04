@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="toolRenk">#FFFFFF</color>
+    <color name="yaziRenk1">#FF000000</color>
+    <color name="yaziRenk2">#ED7C40</color>
+    <color name="buttonRenk1">#129772</color>
+    <color name="buttonRenk2">#252525</color>
+</resources>
