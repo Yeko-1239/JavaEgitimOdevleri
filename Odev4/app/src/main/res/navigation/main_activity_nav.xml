@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/sayfa1Fragment"
+        android:name="com.example.odev4.sayfa1Fragment"
+        android:label="fragment_sayfa1"
+        tools:layout="@layout/fragment_sayfa1" >
+        <action
+            android:id="@+id/bYolu"
+            app:destination="@id/sayfa3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.example.odev4.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/xYolu"
+            app:destination="@id/sayfa1Fragment" />
+        <action
+            android:id="@+id/yYolu"
+            app:destination="@id/sayfa2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayfa2Fragment"
+        android:name="com.example.odev4.sayfa2Fragment"
+        android:label="fragment_sayfa2"
+        tools:layout="@layout/fragment_sayfa2" >
+        <action
+            android:id="@+id/a2Yolu"
+            app:destination="@id/sayfa4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayfa3Fragment"
+        android:name="com.example.odev4.sayfa3Fragment"
+        android:label="fragment_sayfa3"
+        tools:layout="@layout/fragment_sayfa3" >
+        <action
+            android:id="@+id/aYolu"
+            app:destination="@id/sayfa4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayfa4Fragment"
+        android:name="com.example.odev4.sayfa4Fragment"
+        android:label="fragment_sayfa4"
+        tools:layout="@layout/fragment_sayfa4" >
+        <action
+            android:id="@+id/anasayfaYolu"
+            app:destination="@id/anasayfaFragment" />
+    </fragment>
+</navigation>
