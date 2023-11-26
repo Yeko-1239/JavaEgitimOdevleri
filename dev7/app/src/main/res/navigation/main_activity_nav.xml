@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.example.dev7.ui.fragment.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa">
+        <action
+            android:id="@+id/notEkleGecis"
+            app:destination="@id/notEkleFragment" />
+        <action
+            android:id="@+id/notDetayGecis"
+            app:destination="@id/notDetayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notEkleFragment"
+        android:name="com.example.dev7.ui.fragment.NotEkleFragment"
+        android:label="fragment_not_detay"
+        tools:layout="@layout/fragment_not_detay" />
+    <fragment
+        android:id="@+id/notDetayFragment"
+        android:name="com.example.dev7.ui.fragment.NotDetayFragment"
+        android:label="NotDetayFragment" >
+        <argument
+            android:name="not"
+            app:argType="com.example.dev7.data.entity.Notlar" />
+    </fragment>
+</navigation>
